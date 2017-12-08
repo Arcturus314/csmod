@@ -1,0 +1,151 @@
+0 NEWx m -> pm S 3
+0 NEWx xm ->  S 0
+0 NExS m -> dm W 3
+0 NExS xm -> dm W 1
+0 NExx m ->  S 4
+0 NExx xm -> dm W 3
+0 NxWS m ->  E 4
+0 NxWS xm -> dm E 0
+0 NxWx m -> dm E 4
+0 NxWx xm -> dm E 3
+0 NxxS m -> pm E 0
+0 NxxS xm ->  E 1
+0 Nxxx m -> dm W 4
+0 Nxxx xm ->  S 4
+0 xEWS m -> dm N 2
+0 xEWS xm -> dm N 0
+0 xEWx m ->  N 1
+0 xEWx xm ->  N 0
+0 xExS m -> pm N 4
+0 xExS xm -> dm N 4
+0 xExx m -> dm N 1
+0 xExx xm -> dm N 3
+0 xxWS m -> pm N 1
+0 xxWS xm ->  N 3
+0 xxWx m -> dm S 3
+0 xxWx xm ->  E 3
+0 xxxS m -> dm N 1
+0 xxxS xm -> dm N 3
+0 xxxx m -> dm S 2
+0 xxxx xm -> dm E 3
+1 NEWx m ->  S 3
+1 NEWx xm -> dm S 4
+1 NExS m ->  W 1
+1 NExS xm ->  W 0
+1 NExx m -> pm W 2
+1 NExx xm ->  S 0
+1 NxWS m ->  E 3
+1 NxWS xm ->  E 0
+1 NxWx m -> dm S 4
+1 NxWx xm ->  S 0
+1 NxxS m -> dm W 2
+1 NxxS xm -> dm W 3
+1 Nxxx m -> pm E 3
+1 Nxxx xm ->  E 0
+1 xEWS m ->  N 4
+1 xEWS xm ->  N 3
+1 xEWx m -> dm N 0
+1 xEWx xm ->  N 4
+1 xExS m -> dm W 0
+1 xExS xm ->  W 4
+1 xExx m -> pm S 2
+1 xExx xm ->  W 3
+1 xxWS m -> dm N 0
+1 xxWS xm ->  N 2
+1 xxWx m -> pm N 3
+1 xxWx xm ->  N 4
+1 xxxS m -> dm W 3
+1 xxxS xm ->  E 4
+1 xxxx m -> pm S 0
+1 xxxx xm -> dm E 0
+2 NEWx m -> dm S 4
+2 NEWx xm -> dm S 2
+2 NExS m -> pm W 3
+2 NExS xm ->  W 3
+2 NExx m -> pm W 4
+2 NExx xm ->  W 0
+2 NxWS m ->  E 4
+2 NxWS xm ->  E 3
+2 NxWx m ->  S 4
+2 NxWx xm ->  S 3
+2 NxxS m ->  E 4
+2 NxxS xm ->  E 2
+2 Nxxx m -> dm E 1
+2 Nxxx xm ->  E 2
+2 xEWS m -> dm N 0
+2 xEWS xm -> dm N 0
+2 xEWx m ->  S 0
+2 xEWx xm ->  S 4
+2 xExS m -> dm W 0
+2 xExS xm ->  W 0
+2 xExx m -> dm S 1
+2 xExx xm -> dm W 2
+2 xxWS m ->  N 0
+2 xxWS xm -> dm N 0
+2 xxWx m -> pm E 4
+2 xxWx xm -> dm N 1
+2 xxxS m -> dm N 2
+2 xxxS xm -> dm E 0
+2 xxxx m -> pm N 2
+2 xxxx xm -> dm W 4
+3 NEWx m -> pm S 2
+3 NEWx xm -> dm S 3
+3 NExS m -> pm W 3
+3 NExS xm -> dm W 0
+3 NExx m ->  W 1
+3 NExx xm ->  S 2
+3 NxWS m -> pm E 3
+3 NxWS xm -> dm E 0
+3 NxWx m -> pm E 4
+3 NxWx xm ->  S 2
+3 NxxS m -> pm W 4
+3 NxxS xm ->  E 2
+3 Nxxx m -> pm E 0
+3 Nxxx xm ->  W 4
+3 xEWS m -> pm N 1
+3 xEWS xm ->  N 4
+3 xEWx m ->  S 4
+3 xEWx xm -> dm N 4
+3 xExS m ->  N 3
+3 xExS xm -> dm W 4
+3 xExx m ->  W 3
+3 xExx xm -> dm W 2
+3 xxWS m -> dm E 0
+3 xxWS xm ->  N 4
+3 xxWx m -> dm N 2
+3 xxWx xm -> dm N 0
+3 xxxS m -> dm W 2
+3 xxxS xm -> dm N 2
+3 xxxx m -> pm S 3
+3 xxxx xm ->  E 3
+4 NEWx m -> dm S 2
+4 NEWx xm ->  S 0
+4 NExS m ->  W 1
+4 NExS xm -> dm W 0
+4 NExx m -> pm W 0
+4 NExx xm -> dm S 0
+4 NxWS m ->  E 4
+4 NxWS xm -> dm E 1
+4 NxWx m -> pm S 4
+4 NxWx xm ->  E 2
+4 NxxS m -> pm W 3
+4 NxxS xm ->  E 3
+4 Nxxx m ->  E 0
+4 Nxxx xm -> dm S 1
+4 xEWS m ->  N 0
+4 xEWS xm ->  N 4
+4 xEWx m -> pm S 3
+4 xEWx xm -> dm S 3
+4 xExS m ->  W 3
+4 xExS xm ->  N 1
+4 xExx m ->  N 4
+4 xExx xm ->  W 2
+4 xxWS m -> dm E 2
+4 xxWS xm -> dm E 3
+4 xxWx m ->  N 0
+4 xxWx xm ->  N 2
+4 xxxS m -> dm N 0
+4 xxxS xm ->  E 2
+4 xxxx m -> dm W 2
+4 xxxx xm ->  N 0
+
