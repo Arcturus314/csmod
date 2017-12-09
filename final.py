@@ -1,4 +1,5 @@
 import random
+import time
 from operator import itemgetter
 
 HEIGHT    = 25
@@ -100,7 +101,6 @@ class World:
         for row in range(HEIGHT):
             self.room[row][0] = '+'
             self.room[row][WIDTH-1] = '+'
-        self.room[self.prow][self.pcol] = 'P'
 
     def __repr__(self):
         """Returns a human-readable board rendered in ASCII"""
@@ -132,18 +132,27 @@ class World:
         #wall south
         if self.room[self.prow+1][self.pcol] == "+": around += "S"
         else: around += "x"
+#        print(around,at)
         return around, at
 
-    def step(self): 
+    def step(self):
         """One Picobot set given the rules in self.program"""
         surroundings, at = self.getCurrentSurroundings()
         newP = self.prog.getMove(self.state, surroundings, at)
 
-        if at == "m":
-            self.room[self.prow][self.pcol]="."
-        else:
-            self.room[self.prow][self.pcol]="o"
+        #changing state
+        self.state = newP[2]
 
+        #setting pebble
+        if newP[0] == "dm" and at == "xm":
+  #          print("dropping at",self.room[self.prow][self.pcol])
+            self.numcookies += 1
+            if self.numcookies <= 5:
+                self.room[self.prow][self.pcol]="."
+        if newP[0] == "pm" and at == "m":
+ #           print("picking up at",self.room[self.prow][self.pcol])
+            self.numcookies -= 1
+            self.room[self.prow][self.pcol]="o"
 
         #moving picobot
         if newP[1] == "N": self.prow-=1
@@ -151,19 +160,11 @@ class World:
         if newP[1] == "E": self.pcol+=1
         if newP[1] == "W": self.pcol-=1
 
-        #changing state
-        self.state = newP[2]
-
-        #setting pebble
-        if newP[0] == "dm":
-            self.numcookies += 1
-            if self.numcookies <= 5:
-                self.room[self.prow][self.pcol]="."
-                self.room[self.prow][self.pcol]="P"
-        if newP[0] == "pm":
-            self.numcookies -= 1
-        else: self.room[self.prow][self.pcol]="P"
-
+    def stepPrint(self):
+        for i in range(50):
+            self.step()
+            print(self)
+            time.sleep(0.1)
 
     def run(self, steps):
         """Runs step steps number of times"""
@@ -171,6 +172,7 @@ class World:
             self.step()
 
     def fractionVisitedCells(self):
+#        print("cookies:",self.numcookies)
         if self.numcookies > 5: return 0.0
         totalCells = 0
         totalVisited = 0
